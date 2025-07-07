@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // Replace with your real OpenAI API key
-const OPENAI_API_KEY = "sk-...your_openai_api_key_here...";
+   const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 app.post('/chat', async (req, res) => {
   try {
